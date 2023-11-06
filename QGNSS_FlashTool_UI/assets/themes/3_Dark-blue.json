@@ -1,0 +1,32 @@
+{
+   "name":"Dark-blue",  
+   "titlebarSeparator":true,
+   "colors":{
+   "window":"#112233",
+   "windowText":"#7799bb",
+   "base":"#282822",
+   "Alternative":"#219fd5",
+   "tooltipBase":"#282822",
+   "tooltipText":"#ffffff",
+   "placeholderText":"#c5c5c5",
+   "text":"#eeefff",
+   "button":"#112233",
+   "buttonText":"#eeefff",
+   "brightText":"#99d0f7",
+   
+   "light":"#293948",
+   "midlight":"#5f7e97",
+   "dark":"#010e1a",
+   "mid":"#42a5f5",
+   "shadow":"#183b52",
+   
+   "highlight":"#293948",
+   "highlightedText":"#99d0f7",
+   
+   "border":"#255869",
+   
+   "link":"#5a9d76",
+   "linkVisited":"#c792ea"
+   
+   }
+}

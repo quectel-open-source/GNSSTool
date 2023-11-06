@@ -1,0 +1,31 @@
+{
+   "name":"Noctis-Hibernus",   
+   "titlebarSeparator":true,
+   "colors":{
+   "window":"#e7f2f3",
+   "windowText":"#71838e",
+   "base":"#f4f6f6",
+   "Alternative":"#d8edf0",
+   "tooltipBase":"#e0eff1",
+   "tooltipText":"#73b268",
+   "placeholderText":"#71838e",
+   "text":"#424242",
+   "button":"#e7f2f3",
+   "buttonText":"#317880",
+   "brightText":"#71838e",
+   
+   "light":"#c3e4e8",
+   "midlight":"#c1eafa",
+   "dark":"#c1def0",
+   "mid":"#0099ad",
+   "shadow":"#c4c6c6",
+   
+   "highlight":"#c3e4e8",
+   "highlightedText":"#0099ad",
+   
+   "border":"#f4f6f6",
+   
+   "link":"#00cce5",
+   "linkVisited":"#d5d28f"   
+   }
+}

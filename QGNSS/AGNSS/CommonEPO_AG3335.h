@@ -1,0 +1,51 @@
+#ifndef EPO_AG3335_H
+#define EPO_AG3335_H
+#include "stdint.h"
+#include "memory.h"
+
+#define EPO_DEMO_MAX_GPS_SV (32)
+#define EPO_DEMO_MAX_GLONASS_SV (24)
+#define EPO_DEMO_MAX_BD_SV (41)
+#define EPO_DEMO_MAX_GAL_SV (22)
+
+#define EPO_DEMO_RECORD_SIZE (72)
+
+#define GNSS_GLONASS_EPO_BASE_ID (64)
+#define GNSS_GALILEO_EPO_BASE_ID (100)
+#define GNSS_BEIDOU_EPO_BASE_ID (200)
+
+#define GNSS_APP_BINARY_BINARY_PREAMBLE1 (0x04)
+#define GNSS_APP_BINARY_BINARY_PREAMBLE2 (0x24)
+#define GNSS_APP_BINARY_BINARY_ENDWORD1 (0xAA)
+#define GNSS_APP_BINARY_BINARY_ENDWORD2 (0x44)
+#define GNSS_APP_BINARY_BINARY_PREAMBLE_SIZE (2)
+#define GNSS_APP_BINARY_BINARY_CHECKSUM_SIZE (1)
+#define GNSS_APP_BINARY_BINARY_ENDWORD_SIZE (2)
+#define GNSS_APP_BINARY_BINARY_CONTROL_SIZE (GNSS_APP_BINARY_BINARY_PREAMBLE_SIZE + GNSS_APP_BINARY_BINARY_CHECKSUM_SIZE + GNSS_APP_BINARY_BINARY_ENDWORD_SIZE)
+#define GNSS_APP_BINARY_BINARY_MESSAGE_ID_SIZE (2)
+#define GNSS_APP_BINARY_BINARY_PAYLOAD_LENGTH_SIZE (2)
+#define GNSS_APP_BINARY_BINARY_PAYLOAD_HEADER_SIZE (GNSS_APP_BINARY_BINARY_MESSAGE_ID_SIZE + GNSS_APP_BINARY_BINARY_PAYLOAD_LENGTH_SIZE)
+#define GNSS_APP_BINARY_BINARY_MAX_DATA_SIZE (512)
+#define GNSS_APP_BINARY_BINARY_MAX_PAYLOAD_DATA_SIZE (GNSS_APP_BINARY_BINARY_MAX_DATA_SIZE - GNSS_APP_BINARY_BINARY_CONTROL_SIZE - GNSS_APP_BINARY_BINARY_PAYLOAD_HEADER_SIZE)
+
+typedef enum
+{
+    EPO_DEMO_MODE_GPS,
+    EPO_DEMO_MODE_GLONASS,
+    EPO_DEMO_MODE_GALILEO,
+    EPO_DEMO_MODE_BEIDOU
+} epo_demo_mode_t;
+
+typedef struct gnss_app_binary_binary_payload
+{
+    uint16_t message_id;
+    uint16_t data_size; /* actual size of data in payload data buffer */
+    uint8_t data[GNSS_APP_BINARY_BINARY_MAX_PAYLOAD_DATA_SIZE];
+} gnss_app_binary_binary_payload_t;
+
+int16_t gnss_epo_encode_binary(uint16_t msg_id, char *buffer, uint16_t buffer_size,
+                               char *data_input, int32_t data_length);
+
+int32_t epo_demo_get_sv_prn(int32_t type, uint8_t *data);
+
+#endif // EPO_AG3335_H

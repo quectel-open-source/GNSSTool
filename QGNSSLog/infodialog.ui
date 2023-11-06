@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>infoDialog</class>
+ <widget class="QDialog" name="infoDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1086</width>
+    <height>711</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QListWidget" name="listWidget">
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="spacing">
+      <number>2</number>
+     </property>
+     <property name="gridSize">
+      <size>
+       <width>196</width>
+       <height>22</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string>Menu Bar</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Zoom</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Plotting Area</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Info Palette_Plots</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Info Palette_Signals</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="page_1">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+       </font>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTextBrowser" name="textBrowser">
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:12pt; font-weight:600;&quot;&gt;Menu Bar&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;File&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Open File&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;: Opens the target file and trigger parsing.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Shortcut: Ctrl + O&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600; font-style:italic;&quot;&gt;Note: &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;When the incoming log can not be parsed, it will pop-up a window to prompt file open error.&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Save&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;: Saves the current interface content to default path; &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600; font-style:italic;&quot;&gt;Note: &lt;/span&gt;&lt;a name=&quot;OLE_LINK7&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;S&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;ub-menu to provide different formats (PDF/BMP/JPG/PNG).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Save As&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;: Saves the current interface content to customize path; &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600; font-style:italic;&quot;&gt;Note: &lt;/span&gt;&lt;a name=&quot;OLE_LINK7&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;S&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;ub-menu to provide different formats (PDF/BMP/JPG/PNG).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;View&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Line Chart&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;: Converts the View to line plot.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Scatter Chart&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;: Converts the View to a &lt;/span&gt;&lt;a name=&quot;OLE_LINK37&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;S&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;catter plot.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Setting&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Filter options: &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;greater than or equal to the custom value for Elevation/Azimuth/SNR(C/No).&lt;br /&gt;Elevation range: 0-90.&lt;br /&gt;Azimuth range: 0-359.&lt;br /&gt;SNR(C/No) range: 0-99.&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600; font-style:italic;&quot;&gt;Note:&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt; -1 means no filtering.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Help&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Help…&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;: Gives a reference to this user guide.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;About QGNSSLog&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;: Shows the about dialog with the current software version.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelImage_1">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignHCenter|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTextBrowser" name="textBrowser_2">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+          </font>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:12pt; font-weight:600;&quot;&gt;Zoom&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt;There are multiple way to zoom you Plotting Area:&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt;1. Use the mouse wheel to zoom in/out.&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;(A)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt;2. If the mouse cursor is on top of one of the axes you may use the Mouse Wheel to zoom only vertically/horizontally.&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;(BC)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt;3.Y-axis (&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;Status(0=No Fix/1=Fix)&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt;): Display the positioning status.&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;(D)&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt;: Fix;&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt;: No Fix&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt;Others: Invalid value.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelImage_2">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignHCenter|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,1">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTextBrowser" name="textBrowser_3">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+          </font>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;OLE_LINK1&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:12pt; font-weight:600;&quot;&gt;P&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:12pt; font-weight:600;&quot;&gt;lotting Area&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;OLE_LINK18&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;C&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;lear: &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;Right-clicks mouse &lt;/span&gt;&lt;a name=&quot;OLE_LINK22&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;o&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;n plotting area and choose &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Clear&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt; to clear all data.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Refresh: &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;Right-clicks mouse on plotting area and choose &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Refresh&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt; to restore the original graph.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Shortcut: F5&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Comparison: &lt;/span&gt;&lt;a name=&quot;OLE_LINK28&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;R&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;ight-clicks mouse on plotting area and check/cancel &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Comparison.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600; font-style:italic;&quot;&gt;Note&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-style:italic;&quot;&gt;:  &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Wingdings';&quot;&gt;l&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt;The default state is the checked;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Wingdings';&quot;&gt;l&lt;/span&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;The tooltip window next to the black dotted line that the mouse moves on the interface is the data of each frequency band of each frame.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelImage_3">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignHCenter|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_4">
+      <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,1">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTextBrowser" name="textBrowser_4">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+          </font>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:12pt; font-weight:600;&quot;&gt;Info Palette_Plots&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun'; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;The system time is displayed below the “&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Plots&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;” tab menu, and there are &amp;quot;C/No&amp;quot;, &amp;quot;View&amp;quot; and &amp;quot;Used” radio switching buttons; the data displaying area displays the frequency band data existing in the log.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600; font-style:italic;&quot;&gt;Note: &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt;You can right-clickismouse on data area and click &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Perfect&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt;&quot;&gt; to copy all the data to the clipboard.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:10.5pt; font-weight:600;&quot;&gt;Shortcut: Ctrl + C&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelImage_4">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignHCenter|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_5">
+      <layout class="QVBoxLayout" name="verticalLayout_6" stretch="0,1">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTextBrowser" name="textBrowser_5">
+         <property name="font">
+          <font>
+           <family>Arial</family>
+          </font>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAsNeeded</enum>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:12pt; font-weight:600;&quot;&gt;Info Palette_Signals&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun';&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;Enable: &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt;check/cancel all frequency bands.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;Threshold:&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt; check/cancel the alarm line.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;Total Average:&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt; check/cancel the sum line.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;Status:&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt; check/cancel locates the status line.&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;GPS/GLONASS/Galileo/BDS/QZSS/NAVIC/SBAS&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt; represent all the frequency bands it owns, and the gray frames mean the frequency bands are not supported in this log.&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600; font-style:italic;&quot;&gt;Note:&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Wingdings'; font-size:11pt;&quot;&gt;l&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt; In &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;C/No&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt; chart, there no &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;Total Average&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt; line.&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Wingdings'; font-size:11pt;&quot;&gt;l&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt; In the &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;C/No&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt; chart, &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;Threshold&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt; represents an alarm value of &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;35&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt;;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt;in the &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;View&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt; and the &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;Used&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt; chart, it represents an alarm value of &lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt; font-weight:600;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot; font-family:'Arial','sans-serif'; font-size:11pt;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:11pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelImage_5">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignHCenter|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

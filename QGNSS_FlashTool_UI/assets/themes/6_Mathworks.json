@@ -1,0 +1,22 @@
+{
+   "name":"Mathworks",   
+   "titlebarSeparator":true,
+   "colors":{
+      "base":"#fafafa",
+      "link":"#105087",
+      "button":"#d8d8d8",
+      "window":"#d8d8d8",
+      "text":"#000000",
+      "border":"#9a9a9a",
+      "midlight":"#d9d9d9",
+      "highlight":"#424247",
+      "brightText":"#ffffff",
+      "buttonText":"#000000",
+      "windowText":"#000000",
+      "tooltipBase":"#fafafa",
+      "tooltipText":"#242424",
+      "highlightedText":"#ffffff",
+      "highlightedTextAlternative":"#444444",
+      "placeholderText":"#666666"   
+   }
+}

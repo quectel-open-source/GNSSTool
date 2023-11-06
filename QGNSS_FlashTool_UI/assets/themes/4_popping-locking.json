@@ -1,0 +1,31 @@
+﻿{
+   "name":"popping-locking",   
+   "titlebarSeparator":true,
+   "colors":{
+   "window":"#21222d",
+   "windowText":"#fbe5a0",
+   "base":"#1c1d26",
+   "Alternative":"#313242",
+   "tooltipBase":"#181920",
+   "tooltipText":"#dddde0",
+   "placeholderText":"#807b57",
+   "text":"#f2e5bc",
+   "button":"#1c1d26",
+   "buttonText":"#808160",
+   "brightText":"#f2e5bc",
+   
+   "light":"#505053",
+   "midlight":"#21222d",
+   "dark":"#1c1d26",
+   "mid":"#7f8471",
+   "shadow":"#3b3c44",
+   
+   "highlight":"#33343c",
+   "highlightedText":"#f2e5bc",
+   
+   "border":"#3b3c44",
+   
+   "link":"#6fc157",
+   "linkVisited":"#82222d"
+}
+}

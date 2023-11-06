@@ -1,0 +1,33 @@
+{
+   "name":"monokai-dimmed",
+   "titlebarSeparator":true,
+   "colors":{
+   "window":"#505050",
+   "windowText":"#c6c6c6",
+   "base":"#1e1e1e",
+   "Alternative":"#4e4e4e",
+   "tooltipBase":"#4e4e4e",
+   "tooltipText":"#73b268",
+   "placeholderText":"#c2c0c2",
+   "text":"#c5c5c5",
+   "button":"#505050",
+   "buttonText":"#9c9c9c",
+   "brightText":"#ffffff",
+   
+   "light":"#4e4e4e",
+   "midlight":"#444444",
+   "dark":"#1e1e1e",
+   "mid":"#4f4f4f",
+   "shadow":"#393939",
+   
+   "highlight":"#626262",
+   "highlightedText":"#ffffff",
+   
+   "border":"#abb2bf",
+   
+   "link":"#73c97f",
+   "linkVisited":"#e2b35f"
+   
+   }
+   }
+   

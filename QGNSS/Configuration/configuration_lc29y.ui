@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>configuration_LC29Y</class>
+ <widget class="QDialog" name="configuration_LC29Y">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>680</width>
+    <height>502</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="2">
+    <widget class="QListWidget" name="listWidget">
+     <item>
+      <property name="text">
+       <string>CFG-PRT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>CFG-MSG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>CFG-NAVSAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>CFG-SIMPLERST</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page_CFG_PRT">
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>391</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>221</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Configure the communication port</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>54</width>
+         <height>12</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Port ID</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>54</width>
+         <height>12</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Baudrate</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_portID">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>60</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_baudrate">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>100</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_PRT_GC">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>400</y>
+         <width>271</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_CFG_MSG">
+      <widget class="Line" name="line_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>391</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>231</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Configure the message configurations</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_groupAndNumber">
+       <property name="geometry">
+        <rect>
+         <x>122</x>
+         <y>81</y>
+         <width>266</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>0xF0 0x00  NMEA GGA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0xF0 0x01  NMEA GLL</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0xF0 0x02  NMEA GSA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0xF0 0x03  NMEA GRS</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0xF0 0x04  NMEA GSV</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0xF0 0x05  NMEA RMC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0xF0 0x06  NMEA VTG</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0xF0 0x07  NMEA ZDA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0xF0 0x20  NMEA TXT</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>106</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Rate</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>81</y>
+         <width>106</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Group and Number</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_msg_rate">
+       <property name="geometry">
+        <rect>
+         <x>122</x>
+         <y>120</y>
+         <width>266</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string>Send rate on current I/O port</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_PRT_GC_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>390</y>
+         <width>321</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_CFG_NAVSAT">
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>231</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Setup satellites</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>391</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>381</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>GroupBox</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QCheckBox" name="checkBox_gpsL1">
+          <property name="text">
+           <string>GPS L1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QCheckBox" name="checkBox_gloG1">
+          <property name="text">
+           <string>GLONASS G1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QCheckBox" name="checkBox_bdB1I">
+          <property name="text">
+           <string>BeiDou B1I</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QCheckBox" name="checkBox_galileoE1">
+          <property name="text">
+           <string>Galileo E1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QCheckBox" name="checkBox_qzssL1">
+          <property name="text">
+           <string>QZSS L1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QCheckBox" name="checkBox_gpsL1C">
+          <property name="text">
+           <string>GPS L1C</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QCheckBox" name="checkBox_gpsL5">
+          <property name="text">
+           <string>GPS L5</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QCheckBox" name="checkBox_bdB2a">
+          <property name="text">
+           <string>BeiDou B2a</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QCheckBox" name="checkBox_galE5a">
+          <property name="text">
+           <string>Galileo E5a</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QCheckBox" name="checkBox_qzssL5">
+          <property name="text">
+           <string>QZSS L5</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="pushButton_PRT_GC_NAVSAT">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>390</y>
+         <width>321</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_CFG_SIMPLERST">
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>231</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Simple startup command</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>391</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>100</y>
+         <width>54</width>
+         <height>12</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Mode</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_reset_mode">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>90</y>
+         <width>251</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>0x00 Reset</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0x01 Cold Start</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0x02 Warm Start</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0x03 Hot Start</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0x10 GPS Stop</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0x11 GPS Start</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>0x80 Clear All Tracking Channels</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="pushButton_PRT_GC_CFG_SIMPLERST">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>400</y>
+         <width>321</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="pushButton_send">
+     <property name="text">
+      <string>Send</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QLineEdit" name="lineEdit_cmd"/>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <layout class="QVBoxLayout" name="verticalLayout"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>listWidget</sender>
+   <signal>currentRowChanged(int)</signal>
+   <receiver>stackedWidget</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>193</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>408</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

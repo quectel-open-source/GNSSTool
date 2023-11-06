@@ -1,0 +1,32 @@
+{
+    "name":"Light",   
+    "titlebarSeparator":true,
+    "colors":{
+    "window":"#ffffff",
+    "windowText":"#2f363d",
+    "base":"#f6f8fa",
+    "Alternative":"#f6f8fa",
+    "tooltipBase":"#fafbfc",
+    "tooltipText":"#2f363d",
+    "placeholderText":"#d8d9d9",
+    "text":"#2f363d",
+    "button":"#ffffff",
+    "buttonText":"#6e7781",
+    "brightText":"#84888b",
+    
+    "light":"#ebf0f4",
+    "midlight":"#e2e4e7",
+    "dark":"#f6f8fa",
+    "mid":"#c69fc5",
+    "shadow":"#ffffff",
+    
+    "highlight":"#e5e5e5",
+    "highlightedText":"#2f363d",
+    
+    "border":"#d4d7da",
+    
+    "link":"#dbeddf",
+    "linkVisited":"#849fdf"   
+    }
+ }
+ 

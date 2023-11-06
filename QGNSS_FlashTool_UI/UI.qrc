@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>UI/main.qml</file>
+        <file>UI/MTK_3333_UI.qml</file>
+        <file>UI/component/DecentMenuItem.qml</file>
+        <file>UI/MTK_3335_UI.qml</file>
+    </qresource>
+</RCC>

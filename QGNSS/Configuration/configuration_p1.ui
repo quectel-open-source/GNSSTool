@@ -1,0 +1,2482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>configuration_P1</class>
+ <widget class="QDialog" name="configuration_P1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1070</width>
+    <height>582</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2" columnstretch="1,3">
+   <item row="0" column="0">
+    <widget class="QTreeWidget" name="treeWidget">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="autoExpandDelay">
+      <number>3</number>
+     </property>
+     <property name="headerHidden">
+      <bool>true</bool>
+     </property>
+     <attribute name="headerVisible">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Describe</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>PageName</string>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>Command/Control</string>
+      </property>
+      <property name="text">
+       <string>page_13001</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>MessageRequest (13001)</string>
+       </property>
+       <property name="text">
+        <string>page_13001</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ResetRequest (13002)</string>
+       </property>
+       <property name="text">
+        <string>page_13002</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ShutdownRequest (13005)</string>
+       </property>
+       <property name="text">
+        <string>page_13005</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SetConfig (13100)</string>
+       </property>
+       <property name="text">
+        <string>page_DevLocation</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Device Lever Arm</string>
+        </property>
+        <property name="text">
+         <string>page_DevLocation</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device Orientation</string>
+        </property>
+        <property name="text">
+         <string>page_DevOrientation</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>GNSS Lever Arm</string>
+        </property>
+        <property name="text">
+         <string>page_AntLocation</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Output Lever Arm</string>
+        </property>
+        <property name="text">
+         <string>page_OutputLocation</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vehicle Details</string>
+        </property>
+        <property name="text">
+         <string>page_VehicleDetails</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Wheel Config</string>
+        </property>
+        <property name="text">
+         <string>page_wheelMeasurement</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hardware Tick Config</string>
+        </property>
+        <property name="text">
+         <string>page_HWTC</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UART Baud Rate</string>
+        </property>
+        <property name="text">
+         <string>page_Baudrate</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UART Diag Enable</string>
+        </property>
+        <property name="text">
+         <string>page_UDE</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Watchdog Enable</string>
+        </property>
+        <property name="text">
+         <string>page_WDogEnable</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>GetConfig (13101)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SaveConfig (13102)</string>
+       </property>
+       <property name="text">
+        <string>page_Save</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SetMessageRate (13220)</string>
+       </property>
+       <property name="text">
+        <string>page_13220</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GetMessageRate (13221)</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Command Response</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <item>
+       <property name="text">
+        <string>CommandResponse (13000)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VersionInformation (13003)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ConfigResponse (13103)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MessageRateResponse (13222)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MessageRateResponse (13222)</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Navigation Solution Messages</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>IMUMeasurement (11000)</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Primary Sensor Measurement Messages</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>IMUMeasurement (11000)</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>Vehicle Sensor Measurements</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>WheelSpeedMeasurement (11101)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VehicleSpeedMeasurement (11102)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>WheelTickMeasurement (11103)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VehicleTickMeasurement (11104)</string>
+       </property>
+      </item>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButton_send">
+       <property name="text">
+        <string>Send</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditCommand"/>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <layout class="QVBoxLayout" name="statusBarLayout"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page_WDogEnable">
+      <widget class="QPushButton" name="GC_WDogEnable">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>101</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>131</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>132</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_16">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>41</y>
+         <width>571</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_45">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>261</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Enable/disable diagnostic output on UART</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_WDogEnable">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>121</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Enable</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_UDE">
+      <widget class="Line" name="line_15">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>41</y>
+         <width>571</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="GC_UDE">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>101</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>131</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>132</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_UDE">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>61</y>
+         <width>56</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_44">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>261</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Enable/disable diagnostic output on UART</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_UDE">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>60</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Enable</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_HWTC">
+      <widget class="QLabel" name="label_40">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>551</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hardware Wheel Tick Configuration</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_14">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>701</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="GC_HWTC">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>190</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>131</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>132</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>391</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_43">
+          <property name="text">
+           <string>Tick Mode</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBox_tickMode"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_42">
+          <property name="text">
+           <string>Tick Direction</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="comboBox_tickDir"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_41">
+          <property name="text">
+           <string>Meters/Tick Scale Factor</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit_tickScaleF"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_13001">
+      <widget class="QComboBox" name="comboBox_msgType">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>60</y>
+         <width>271</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="GC_13001">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>100</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>131</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>132</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>60</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Message Type</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_13">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>701</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_39">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>561</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Request transmission of a specific message type.</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_13002">
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>9</y>
+         <width>396</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Requests the system perform a specified group of reset operations.</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_7">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>27</y>
+         <width>910</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_cunstomReset">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>50</y>
+         <width>575</width>
+         <height>93</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Custom options</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="0">
+         <widget class="QCheckBox" name="checkBox_reset_0">
+          <property name="text">
+           <string>RESTART_NAVIGATION_ENGINE</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QCheckBox" name="checkBox_reset_1">
+          <property name="text">
+           <string>RESET_GNSS_CORRECTIONS</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QCheckBox" name="checkBox_reset_8">
+          <property name="text">
+           <string>RESET_POSITION_DATA</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QCheckBox" name="checkBox_reset_9">
+          <property name="text">
+           <string>RESET_EPHEMERIS</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QCheckBox" name="checkBox_reset_10">
+          <property name="text">
+           <string>RESET_FAST_IMU_CORRECTIONS</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QCheckBox" name="checkBox_reset_12">
+          <property name="text">
+           <string>RESET_NAVIGATION_ENGINE_DATA</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QCheckBox" name="checkBox_reset_13">
+          <property name="text">
+           <string>RESET_CALIBRATION_DATA</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QCheckBox" name="checkBox_reset_20">
+          <property name="text">
+           <string>RESET_CONFIG</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QCheckBox" name="checkBox_reset_24">
+          <property name="text">
+           <string>RESET_GNSS_MEASUREMENT_ENGIN</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_specialReset">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>160</y>
+         <width>581</width>
+         <height>49</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Special</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QRadioButton" name="radioButton_hot">
+          <property name="text">
+           <string>HOT_START</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup_special_reset</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_warm">
+          <property name="text">
+           <string>WARM_START</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup_special_reset</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_cold">
+          <property name="text">
+           <string>COLD_START</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup_special_reset</string>
+          </attribute>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_factory">
+          <property name="text">
+           <string>FACTORY_RESET</string>
+          </property>
+          <attribute name="buttonGroup">
+           <string notr="true">buttonGroup_special_reset</string>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="GC_reset">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>240</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>131</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>132</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_13005">
+      <widget class="QLabel" name="label_38">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>561</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Shutdown the device.</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_12">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>701</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="GC_shutdown">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>131</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>132</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_Baudrate">
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>9</y>
+         <width>138</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Configure UART Baudrate</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>571</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_port">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>56</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_baudrate">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>50</y>
+         <width>133</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="GC_baudrate">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>131</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>132</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_DevLocation">
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>255</y>
+         <width>486</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>The location of the device IMU with respect to the vehicle body frame(in meters).</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="GC_DeviceLocation">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>450</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>131</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>132</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>9</y>
+         <width>750</width>
+         <height>240</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>750</width>
+         <height>240</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../terminal.qrc">:/images/CarFrameDefinition.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_2">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>273</y>
+         <width>751</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="PL_DevLocation">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>450</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Poll</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>300</y>
+         <width>161</width>
+         <height>134</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>X</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_DX">
+             <property name="minimumSize">
+              <size>
+               <width>124</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>Y</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_DY"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>Z</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_DZ"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_AntLocation">
+      <widget class="QPushButton" name="GC_AntLocation">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>450</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>131</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>132</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_3">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>273</y>
+         <width>751</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>9</y>
+         <width>750</width>
+         <height>240</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>750</width>
+         <height>240</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../terminal.qrc">:/images/CarFrameDefinition.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="PL_AntLocation">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>450</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Poll</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>255</y>
+         <width>504</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>The location of the GNSS antenna with respect to the vehicle body frame (in meters).</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>300</y>
+         <width>155</width>
+         <height>134</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="title">
+           <string>X</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_AX">
+             <property name="minimumSize">
+              <size>
+               <width>124</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="title">
+           <string>Y</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_AY"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="title">
+           <string>Z</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_AZ"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_OutputLocation">
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>9</y>
+         <width>750</width>
+         <height>240</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>750</width>
+         <height>240</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../terminal.qrc">:/images/CarFrameDefinition.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>255</y>
+         <width>570</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>The location of the desired output location with respect to the vehicle body frame (in meters).</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_6">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>273</y>
+         <width>751</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="PL_OutputLocation">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>450</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Poll</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="GC_OutputLocation">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>450</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>131</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>300</y>
+         <width>155</width>
+         <height>134</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QGroupBox" name="groupBox_7">
+          <property name="title">
+           <string>X</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_OX"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="title">
+           <string>Y</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_OY"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_9">
+          <property name="title">
+           <string>Z</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_OZ"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_DevOrientation">
+      <widget class="QPushButton" name="GC_DeviceOrientation">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>110</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>131</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>9</y>
+         <width>396</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>The orientation of a device with respect to the vehicle body axes.</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_4">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>27</y>
+         <width>511</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="PL_DevOrientation">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Poll</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>50</y>
+         <width>447</width>
+         <height>48</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The &lt;span style=&quot; color:#ff0000;&quot;&gt;+X axis&lt;/span&gt; of the device points to the&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="comboBox_z_direction">
+          <property name="currentIndex">
+           <number>-1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>of the vehicle</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBox_x_direction"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The &lt;span style=&quot; color:#ff0000;&quot;&gt;+Z axis&lt;/span&gt; of the device points to the&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>of the vehicle</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <spacer name="horizontalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_VehicleDetails">
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>52</y>
+         <width>36</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Model:</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineEdit_model</cstring>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>78</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Wheelbase:</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineEdit_wheelbase</cstring>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>104</y>
+         <width>108</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Front Track Width:</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineEdit_frontTrackWidth</cstring>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>130</y>
+         <width>102</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Rear Track Width:</string>
+       </property>
+       <property name="buddy">
+        <cstring>lineEdit_rearTrackWidth</cstring>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_vechicleModel">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>50</y>
+         <width>351</width>
+         <height>321</height>
+        </rect>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderHighlightSections">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <row>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>新建行</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>新建行</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>新建行</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>新建行</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>新建行</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>新建行</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>新建行</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>新建行</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Value</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Description</string>
+        </property>
+       </column>
+       <item row="0" column="0">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item row="0" column="1">
+        <property name="text">
+         <string>Unknown vehicle type</string>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item row="1" column="1">
+        <property name="text">
+         <string>Dataspeed CD4 drive-by-wire system</string>
+        </property>
+       </item>
+       <item row="2" column="0">
+        <property name="text">
+         <string>2</string>
+        </property>
+       </item>
+       <item row="2" column="1">
+        <property name="text">
+         <string>J1939 CAN message standard</string>
+        </property>
+       </item>
+       <item row="3" column="0">
+        <property name="text">
+         <string>20</string>
+        </property>
+       </item>
+       <item row="3" column="1">
+        <property name="text">
+         <string>Lexus CT200H</string>
+        </property>
+       </item>
+       <item row="4" column="0">
+        <property name="text">
+         <string>40</string>
+        </property>
+       </item>
+       <item row="4" column="1">
+        <property name="text">
+         <string>Kia Sorento</string>
+        </property>
+       </item>
+       <item row="5" column="0">
+        <property name="text">
+         <string>41</string>
+        </property>
+       </item>
+       <item row="5" column="1">
+        <property name="text">
+         <string>Kia Sportage</string>
+        </property>
+       </item>
+       <item row="6" column="0">
+        <property name="text">
+         <string>60</string>
+        </property>
+       </item>
+       <item row="6" column="1">
+        <property name="text">
+         <string>Audi Q7</string>
+        </property>
+       </item>
+       <item row="7" column="0">
+        <property name="text">
+         <string>61</string>
+        </property>
+       </item>
+       <item row="7" column="1">
+        <property name="text">
+         <string>Audi A8L</string>
+        </property>
+       </item>
+       <item row="8" column="0">
+        <property name="text">
+         <string>80</string>
+        </property>
+       </item>
+       <item row="8" column="1">
+        <property name="text">
+         <string>Tesla Model X</string>
+        </property>
+       </item>
+       <item row="9" column="0">
+        <property name="text">
+         <string>81</string>
+        </property>
+       </item>
+       <item row="9" column="1">
+        <property name="text">
+         <string>Tesla Model 3</string>
+        </property>
+       </item>
+       <item row="10" column="0">
+        <property name="text">
+         <string>100</string>
+        </property>
+       </item>
+       <item row="10" column="1">
+        <property name="text">
+         <string>Hyundai Elantra</string>
+        </property>
+       </item>
+       <item row="11" column="0">
+        <property name="text">
+         <string>120</string>
+        </property>
+       </item>
+       <item row="11" column="1">
+        <property name="text">
+         <string>Peugeot 206</string>
+        </property>
+       </item>
+       <item row="12" column="0">
+        <property name="text">
+         <string>140</string>
+        </property>
+       </item>
+       <item row="12" column="1">
+        <property name="text">
+         <string>MAN TGX</string>
+        </property>
+       </item>
+       <item row="13" column="0">
+        <property name="text">
+         <string>160</string>
+        </property>
+       </item>
+       <item row="13" column="1">
+        <property name="text">
+         <string>Faction</string>
+        </property>
+       </item>
+       <item row="14" column="0">
+        <property name="text">
+         <string>180</string>
+        </property>
+       </item>
+       <item row="14" column="1">
+        <property name="text">
+         <string>Lincoln MKZ</string>
+        </property>
+       </item>
+       <item row="15" column="0">
+        <property name="text">
+         <string>200</string>
+        </property>
+       </item>
+       <item row="15" column="1">
+        <property name="text">
+         <string>BMW 7-Series</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_model">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>52</y>
+         <width>281</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>Enter the value from the table on the right </string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_wheelbase">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>78</y>
+         <width>281</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>meters</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_frontTrackWidth">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>104</y>
+         <width>231</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>meters</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_rearTrackWidth">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>130</y>
+         <width>231</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>meters</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="GC_vehicleDetails">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>170</y>
+         <width>141</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>141</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>132</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>9</y>
+         <width>366</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Information about the vehicle including model and dimensions.</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_8">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>27</y>
+         <width>757</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_wheelMeasurement">
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>481</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Wheel Measurement Configuration</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_9">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>731</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="GC_wheelMeasurement">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>340</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>131</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>421</width>
+         <height>271</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_11">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_21">
+          <property name="text">
+           <string>Wheel Sensor Type</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBox_WS_type"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_22">
+          <property name="text">
+           <string>Applied Speed Type</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="comboBox_AS_type"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_23">
+          <property name="text">
+           <string>Steering Type</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="comboBox_SteeringType"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_24">
+          <property name="text">
+           <string>Wheel Update Interval</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lineEdit_whellUpInt">
+          <property name="toolTip">
+           <string>The nominal rate at which wheel speed measurements will be provided in seconds.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_25">
+          <property name="text">
+           <string>Steering Ratio</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="lineEdit_steeringRatio">
+          <property name="toolTip">
+           <string>The ratio between the angle of the steering wheel and the angle of the wheels on the ground.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_26">
+          <property name="text">
+           <string>Tick/Meter Scale Factor</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="lineEdit_tickScale">
+          <property name="toolTip">
+           <string>The scale factor to convert wheel encoder ticks to distance in meters/tick. Used for TICKS and TICK_RATE wheel sensor types only.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_27">
+          <property name="text">
+           <string>Wheel Tick Max Value</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="lineEdit_wTickMaxValue">
+          <property name="toolTip">
+           <string>The maximum value before the wheel tick measurement will roll over.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_28">
+          <property name="text">
+           <string>Wheel Ticks Signed</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLineEdit" name="lineEdit_wTicksSigned">
+          <property name="toolTip">
+           <string>1 if the wheel reported wheel tick measurements should be interpreted as signed integers, or 0 if they should be interpreted as unsigned integers.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_29">
+          <property name="text">
+           <string>Wheel Ticks Always Increase</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLineEdit" name="lineEdit_wTicksAlwaysInc">
+          <property name="toolTip">
+           <string>1 if the wheel tick measurements increase by a positive amount when driving forward or backward. 0 if wheel tick measurements decrease when driving backward.</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_13220">
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>561</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Configure the set of output streams to be generated on a specified interface.</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_10">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>701</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_34">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>110</y>
+         <width>281</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Invalid 0
+Standard NMEA-0183 Messages
+GGA 1
+GLL 2
+GSA 3
+GSV 4
+RMC 5
+VTG 6
+Point One Proprietary Messages
+P1CALSTATUS 1000
+P1MSG 1001
+Quectel Proprietary Messages
+PQTMVERNO 1200
+PQTMVER 1201
+PQTMGNSS 1202</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_11">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>160</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="GC_setOutput">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>330</y>
+         <width>141</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>141</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>132</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>371</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_12">
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_36">
+          <property name="text">
+           <string>Message ID</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_32">
+          <property name="text">
+           <string>Protocol Type</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBox_transportType"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_31">
+          <property name="text">
+           <string>Port Index</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="comboBox_protocolType"/>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lineEdit_msgID">
+          <property name="text">
+           <string>65535</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_30">
+          <property name="text">
+           <string>Transport Type</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_portIndex">
+          <property name="toolTip">
+           <string>A 0-based identifier for the instance of this transport</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_37">
+          <property name="text">
+           <string>Message Rate</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="comboBox_msgRate"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_10">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>240</y>
+         <width>371</width>
+         <height>48</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Flags</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QCheckBox" name="checkBox_output_0">
+          <property name="text">
+           <string>APPLY_AND_SAVE</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_output_1">
+          <property name="text">
+           <string>FLAG_INCLUDE_DISABLED_MESSAGES</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_Save">
+      <widget class="QPushButton" name="GC_SaveSettings">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>141</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>141</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>132</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Generate command</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>9</y>
+         <width>222</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Save or reload configuration settings</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_5">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>30</y>
+         <width>912</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_SaveOption">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>131</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>pushButton_send</tabstop>
+  <tabstop>lineEditCommand</tabstop>
+  <tabstop>comboBox_port</tabstop>
+  <tabstop>lineEdit_baudrate</tabstop>
+  <tabstop>lineEdit_DX</tabstop>
+  <tabstop>GC_DeviceLocation</tabstop>
+  <tabstop>lineEdit_DY</tabstop>
+  <tabstop>lineEdit_DZ</tabstop>
+  <tabstop>PL_DevLocation</tabstop>
+  <tabstop>GC_vehicleDetails</tabstop>
+  <tabstop>PL_AntLocation</tabstop>
+  <tabstop>tableWidget_vechicleModel</tabstop>
+  <tabstop>lineEdit_AY</tabstop>
+  <tabstop>lineEdit_AZ</tabstop>
+  <tabstop>lineEdit_OX</tabstop>
+  <tabstop>lineEdit_OY</tabstop>
+  <tabstop>lineEdit_OZ</tabstop>
+  <tabstop>PL_OutputLocation</tabstop>
+  <tabstop>GC_OutputLocation</tabstop>
+  <tabstop>GC_DeviceOrientation</tabstop>
+  <tabstop>lineEdit_model</tabstop>
+  <tabstop>lineEdit_wheelbase</tabstop>
+  <tabstop>lineEdit_frontTrackWidth</tabstop>
+  <tabstop>lineEdit_rearTrackWidth</tabstop>
+  <tabstop>comboBox_SaveOption</tabstop>
+  <tabstop>GC_SaveSettings</tabstop>
+  <tabstop>GC_reset</tabstop>
+  <tabstop>groupBox_cunstomReset</tabstop>
+  <tabstop>groupBox_specialReset</tabstop>
+  <tabstop>radioButton_hot</tabstop>
+  <tabstop>radioButton_warm</tabstop>
+  <tabstop>radioButton_cold</tabstop>
+  <tabstop>checkBox_reset_0</tabstop>
+  <tabstop>checkBox_reset_1</tabstop>
+  <tabstop>checkBox_reset_8</tabstop>
+  <tabstop>checkBox_reset_12</tabstop>
+  <tabstop>checkBox_reset_9</tabstop>
+  <tabstop>checkBox_reset_10</tabstop>
+  <tabstop>checkBox_reset_24</tabstop>
+  <tabstop>checkBox_reset_13</tabstop>
+  <tabstop>checkBox_reset_20</tabstop>
+  <tabstop>radioButton_factory</tabstop>
+  <tabstop>GC_AntLocation</tabstop>
+  <tabstop>lineEdit_AX</tabstop>
+  <tabstop>comboBox_z_direction</tabstop>
+  <tabstop>comboBox_x_direction</tabstop>
+  <tabstop>PL_DevOrientation</tabstop>
+  <tabstop>GC_baudrate</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../terminal.qrc"/>
+ </resources>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup_special_reset"/>
+ </buttongroups>
+</ui>

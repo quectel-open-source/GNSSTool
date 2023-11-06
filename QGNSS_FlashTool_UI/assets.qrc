@@ -1,0 +1,61 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/themes/6_Mathworks.json</file>
+        <file>assets/themes/1_one-dark-pro.json</file>
+        <file>assets/themes/2_monokai-dimmed.json</file>
+        <file>assets/themes/3_Dark-blue.json</file>
+        <file>assets/themes/4_popping-locking.json</file>
+        <file>assets/themes/5_Noctis-Hibernus.json</file>
+        <file>assets/themes/7_Light.json</file>
+        <file>assets/images/uEA0F-check.svg</file>
+        <file>assets/images/uEA1C-error.svg</file>
+        <file>assets/images/uEA1D-warning.svg</file>
+        <file>assets/images/uEA1E-pause.svg</file>
+        <file>assets/images/uEA1F-play.svg</file>
+        <file>assets/images/uEA3A-download.svg</file>
+        <file>assets/images/uEA4F-file.svg</file>
+        <file>assets/images/uEA08-settings.svg</file>
+        <file>assets/images/uEA12-open-file.svg</file>
+        <file>assets/images/uEA23-stop.svg</file>
+        <file>assets/images/uEA24-clear-all.svg</file>
+        <file>assets/images/uEA25-filter.svg</file>
+        <file>assets/images/uEA28-trash.svg</file>
+        <file>assets/images/uEAB2-save.svg</file>
+        <file>assets/images/uEAB4-save-as.svg</file>
+        <file>assets/images/uEAB6-login.svg</file>
+        <file>assets/images/uEB49-play-below.svg</file>
+        <file>assets/images/uEA0E-delete-forever.svg</file>
+        <file>assets/images/uEA1A-more.svg</file>
+        <file>assets/images/uEA3B-upload.svg</file>
+        <file>assets/images/uEA04-rocket.svg</file>
+        <file>assets/images/uEA4E-symbol-event.svg</file>
+        <file>assets/images/uEA6B-get-started.svg</file>
+        <file>assets/images/uEA17-close.svg</file>
+        <file>assets/images/uEA77-clock.svg</file>
+        <file>assets/images/uEA85-eye.svg</file>
+        <file>assets/images/uEA86-eye-off.svg</file>
+        <file>assets/images/uEA88-info.svg</file>
+        <file>assets/images/uEB47-sync.svg</file>
+        <file>assets/images/handshake.svg</file>
+        <file>assets/images/uEA0F-check - red.svg</file>
+        <file>assets/images/uEA1C-error - red.svg</file>
+        <file>assets/images/uEA1D-warning - yellow.svg</file>
+        <file>assets/images/uEA1F-play - blue.svg</file>
+        <file>assets/images/uEA23-stop - red.svg</file>
+        <file>assets/images/uEA3A-download -blue.svg</file>
+        <file>assets/images/uEA17-close - red.svg</file>
+        <file>assets/images/uEA1C-error - orange.svg</file>
+        <file>assets/images/uEA32-breakpoint.svg</file>
+        <file>assets/images/uEA32-breakpoint -darkblue.svg</file>
+        <file>assets/images/uEA97-cancel.svg</file>
+        <file>assets/cfg/MT3335/DAFILE/115200/slave_da_UART.bin</file>
+        <file>assets/cfg/MT3335/DAFILE/921600/slave_da_UART.bin</file>
+        <file>assets/images/format.svg</file>
+        <file>assets/images/Download.svg</file>
+        <file>assets/images/Download-blue.svg</file>
+        <file>assets/images/format - red.svg</file>
+        <file>assets/cfg/MT3352/DAFILE/slave_da_115200.bin</file>
+        <file>assets/cfg/MT3352/DAFILE/slave_da_921600.bin</file>
+        <file>assets/images/firmwareupgrade.svg</file>
+    </qresource>
+</RCC>

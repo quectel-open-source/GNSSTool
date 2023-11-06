@@ -1,0 +1,282 @@
+#!/usr/bin/env python3
+
+from collections import defaultdict
+import os
+import sys
+
+# Add the Python root directory (fusion-engine-client/python/) to the import search path to enable FusionEngine imports
+# if this application is being run directly out of the repository and is not installed as a pip package.
+root_dir = os.path.normpath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, root_dir)
+
+
+from fusion_engine_client.messages import *
+from fusion_engine_client.parsers import MixedLogReader
+from fusion_engine_client.utils import trace as logging
+from fusion_engine_client.utils.argument_parser import ArgumentParser, ExtendedBooleanAction
+from fusion_engine_client.utils.log import locate_log, DEFAULT_LOG_BASE_DIR
+from fusion_engine_client.utils.time_range import TimeRange
+from fusion_engine_client.utils.trace import HighlightFormatter, BrokenPipeStreamHandler
+
+_logger = logging.getLogger('point_one.fusion_engine.applications.print_contents')
+
+
+def print_message(header, contents, offset_bytes, format='pretty'):
+    if isinstance(contents, MessagePayload):
+        if format in ('oneline', 'oneline-detailed'):
+            # The repr string should always start with the message type, then other contents:
+            #   [POSE (10000), p1_time=12.029 sec, gps_time=2249:528920.500 (1360724120.500 sec), ...]
+            # We want to reformat and insert the additional details as follows for consistency:
+            #   POSE (10000) [sequence=10, ... p1_time=12.029 sec, gps_time=2249:528920.500 (1360724120.500 sec), ...]
+            message_str = repr(contents).split('\n')[0]
+            message_str = message_str.replace('[', '', 1)
+            break_idx = message_str.find(',')
+            if break_idx >= 0:
+                message_str = f'{message_str[:break_idx]} [{message_str[(break_idx + 2):]}'
+            else:
+                message_str = message_str.rstrip(']')
+            parts = [message_str]
+        else:
+            parts = str(contents).split('\n')
+    else:
+        parts = [f'{header.get_type().to_string(include_value=True)} (unsupported)']
+
+    if format in ('pretty', 'oneline-detailed'):
+        details = 'sequence=%d, size=%d B, offset=%d B (0x%x)' %\
+                  (header.sequence_number, header.get_message_size(), offset_bytes, offset_bytes)
+
+        idx = parts[0].find('[')
+        if idx < 0:
+            parts[0] += f' [{details}]'
+        else:
+            parts[0] = f'{parts[0][:(idx + 1)]}{details}, {parts[0][(idx + 1):]}'
+
+    _logger.info('\n'.join(parts))
+
+
+if __name__ == "__main__":
+    parser = ArgumentParser(description="""\
+Decode and print the contents of messages contained in a *.p1log file or other
+binary file containing FusionEngine messages. The binary file may also contain
+other types of data.
+""")
+
+    parser.add_argument(
+        '--absolute-time', '--abs', action=ExtendedBooleanAction,
+        help="Interpret the timestamps in --time as absolute P1 times. Otherwise, treat them as relative to the first "
+             "message in the file. Ignored if --time contains a type specifier.")
+    parser.add_argument(
+        '-f', '--format', choices=['pretty', 'oneline', 'oneline-detailed'], default='pretty',
+        help="Specify the format used to print the message contents.")
+    parser.add_argument(
+        '-s', '--summary', action='store_true',
+        help="Print a summary of the messages in the file.")
+    parser.add_argument(
+        '-m', '--message-type', type=str, action='append',
+        help="An optional list of class names corresponding with the message types to be displayed. May be specified "
+             "multiple times (-m Pose -m PoseAux), or as a comma-separated list (-m Pose,PoseAux). All matches are"
+             "case-insensitive.\n"
+             "\n"
+             "If a partial name is specified, the best match will be returned. Use the wildcard '*' to match multiple "
+             "message types.\n"
+             "\n"
+             "Supported types:\n%s" % '\n'.join(['- %s' % c for c in message_type_by_name.keys()]))
+    parser.add_argument(
+        '-t', '--time', type=str, metavar='[START][:END][:{rel,abs}]',
+        help="The desired time range to be analyzed. Both start and end may be omitted to read from beginning or to "
+             "the end of the file. By default, timestamps are treated as relative to the first message in the file, "
+             "unless an 'abs' type is specified or --absolute-time is set.")
+    parser.add_argument('-v', '--verbose', action='count', default=0,
+                        help="Print verbose/trace debugging messages.")
+
+    log_parser = parser.add_argument_group('Log Control')
+    log_parser.add_argument(
+        '--ignore-index', action='store_true',
+        help="If set, do not load the .p1i index file corresponding with the .p1log data file. If specified and a .p1i "
+             "file does not exist, do not generate one. Otherwise, a .p1i file will be created automatically to "
+             "improve data read speed in the future.")
+    log_parser.add_argument(
+        '--log-base-dir', metavar='DIR', default=DEFAULT_LOG_BASE_DIR,
+        help="The base directory containing FusionEngine logs to be searched if a log pattern is specified.")
+    log_parser.add_argument(
+        '--progress', action='store_true',
+        help="Print file read progress to the console periodically.")
+    log_parser.add_argument(
+        'log',
+        help="The log to be read. May be one of:\n"
+             "- The path to a .p1log file or a file containing FusionEngine messages and other content\n"
+             "- The path to a FusionEngine log directory\n"
+             "- A pattern matching a FusionEngine log directory under the specified base directory "
+             "(see find_fusion_engine_log() and --log-base-dir)")
+
+    options = parser.parse_args()
+
+    read_index = not options.ignore_index
+    generate_index = not options.ignore_index
+
+    # Configure logging.
+    if options.verbose >= 1:
+        logging.basicConfig(level=logging.INFO, format='%(levelname)s - %(name)s:%(lineno)d - %(message)s',
+                            stream=sys.stdout)
+        if options.verbose == 1:
+            logging.getLogger('point_one.fusion_engine.parsers').setLevel(logging.DEBUG)
+        else:
+            logging.getLogger('point_one.fusion_engine.parsers').setLevel(
+                logging.getTraceLevel(depth=options.verbose - 1))
+    else:
+        logging.basicConfig(level=logging.INFO, format='%(message)s', stream=sys.stdout)
+
+    HighlightFormatter.install(color=True, standoff_level=logging.WARNING)
+    BrokenPipeStreamHandler.install()
+
+    # Locate the input file and set the output directory.
+    input_path, log_id = locate_log(input_path=options.log, log_base_dir=options.log_base_dir, return_log_id=True,
+                                    extract_fusion_engine_data=False)
+    if input_path is None:
+        # locate_log() will log an error.
+        sys.exit(1)
+
+    _logger.info("Processing input file '%s'." % input_path)
+
+    # Parse the time range.
+    time_range = TimeRange.parse(options.time, absolute=options.absolute_time)
+
+    # If the user specified a set of message names, lookup their type values. Below, we will limit the printout to only
+    # those message types.
+    message_types = set()
+    if options.message_type is not None:
+        # Pattern match to any of:
+        #   -m Type1
+        #   -m Type1 -m Type2
+        #   -m Type1,Type2
+        #   -m Type1,Type2 -m Type3
+        #   -m Type*
+        try:
+            message_types = MessagePayload.find_matching_message_types(options.message_type)
+            if len(message_types) == 0:
+                # find_matching_message_types() will print an error.
+                sys.exit(1)
+        except ValueError as e:
+            _logger.error(str(e))
+            sys.exit(1)
+
+    # Check if any of the requested message types do _not_ have P1 time (e.g., profiling messages). The index file
+    # does not currently contain non-P1 time messages, so if we use it to search for messages we will end up
+    # skipping all of these ones. Instead, we disable the index and revert to full file search.
+    if read_index:
+        if len(message_types) == 0:
+            need_system_time = True
+        else:
+            need_system_time = False
+            for message_type in message_types:
+                cls = message_type_to_class[message_type]
+                message = cls()
+                if hasattr(message, 'p1_time'):
+                    continue
+                else:
+                    timestamps = getattr(message, 'timestamps', None)
+                    if isinstance(timestamps, MeasurementDetails):
+                        continue
+                    else:
+                        need_system_time = True
+                        break
+
+        if need_system_time and options.time is not None:
+            _logger.info('Non-P1 time messages requested and time range specified. Disabling index file.')
+            read_index = False
+
+    # Process all data in the file.
+    reader = MixedLogReader(input_path, return_bytes=True, return_offset=True, show_progress=options.progress,
+                            ignore_index=not read_index, generate_index=generate_index,
+                            message_types=message_types, time_range=time_range)
+
+    if reader.generating_index() and (len(message_types) > 0 or options.time is not None):
+        _logger.info('Generating index file - processing complete file. This may take some time.')
+
+    first_p1_time_sec = None
+    last_p1_time_sec = None
+    newest_p1_time = None
+
+    first_system_time_sec = None
+    last_system_time_sec = None
+    newest_system_time_sec = None
+
+    total_messages = 0
+    bytes_decoded = 0
+
+    def create_stats_entry(): return {'count': 1}
+    message_stats = defaultdict(create_stats_entry)
+    try:
+        for header, message, data, offset_bytes in reader:
+            bytes_decoded += len(data)
+
+            # Update the data summary in summary mode, or print the message contents otherwise.
+            total_messages += 1
+            if options.summary:
+                entry = message_stats[header.message_type]
+                entry['count'] += 1
+
+                if message is not None:
+                    p1_time = message.get_p1_time()
+                    if p1_time is not None:
+                        if first_p1_time_sec is None:
+                            first_p1_time_sec = float(p1_time)
+                            last_p1_time_sec = float(p1_time)
+                            newest_p1_time = p1_time
+                        else:
+                            # For P1 time, we allow a small tolerance to account for normal latency between measurements
+                            # and computed data like pose solutions.
+                            dt_sec = float(newest_p1_time - p1_time)
+                            if dt_sec < -0.2:
+                                _logger.warning(
+                                    'P1 time restart detected after %s. [message=%s, p1_time=%s, offset=%d B]' %
+                                    (str(newest_p1_time), header.get_type_string(), str(p1_time), offset_bytes))
+                            last_p1_time_sec = max(last_p1_time_sec, float(p1_time))
+                            newest_p1_time = p1_time
+
+                    system_time_sec = message.get_system_time_sec()
+                    if system_time_sec is not None:
+                        if first_system_time_sec is None:
+                            first_system_time_sec = system_time_sec
+                            last_system_time_sec = system_time_sec
+                            newest_system_time_sec = system_time_sec
+                        else:
+                            if system_time_sec < newest_system_time_sec:
+                                _logger.warning(
+                                    'System time restart detected after %s. [message=%s, system_time=%s, offset=%d B]' %
+                                    (system_time_to_str(newest_system_time_sec, is_seconds=True),
+                                     header.get_type_string(),
+                                     system_time_to_str(system_time_sec, is_seconds=True),
+                                     offset_bytes))
+                            last_system_time_sec = max(last_system_time_sec, system_time_sec)
+                            newest_system_time_sec = system_time_sec
+            else:
+                print_message(header, message, offset_bytes, format=options.format)
+    except (BrokenPipeError, KeyboardInterrupt) as e:
+        sys.exit(1)
+
+    # Print the data summary.
+    if options.summary:
+        _logger.info('Input file: %s' % input_path)
+        _logger.info('Log ID: %s' % log_id)
+        if first_p1_time_sec is not None:
+            _logger.info('Duration (P1): %.1f seconds' % (last_p1_time_sec - first_p1_time_sec))
+        else:
+            _logger.info('Duration (P1): unknown')
+        if first_system_time_sec is not None:
+            _logger.info('Duration (system): %.1f seconds' % (last_system_time_sec - first_system_time_sec))
+        else:
+            _logger.info('Duration (system): unknown')
+        _logger.info('Total data read: %d B' % reader.get_bytes_read())
+        _logger.info('Selected data size: %d B' % bytes_decoded)
+        _logger.info('')
+
+        format_string = '| {:<50} | {:>8} |'
+        _logger.info(format_string.format('Message Type', 'Count'))
+        _logger.info(format_string.format('-' * 50, '-' * 8))
+        for type, info in message_stats.items():
+            _logger.info(format_string.format(message_type_to_class[type].__name__, info['count']))
+        _logger.info(format_string.format('-' * 50, '-' * 8))
+        _logger.info(format_string.format('Total', total_messages))
+    elif total_messages == 0:
+        _logger.warning('No valid FusionEngine messages found.')

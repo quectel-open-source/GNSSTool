@@ -1,0 +1,2602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConfigurationLC29D</class>
+ <widget class="QWidget" name="ConfigurationLC29D">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>707</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>707</width>
+    <height>572</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="leftMargin">
+    <number>3</number>
+   </property>
+   <property name="topMargin">
+    <number>3</number>
+   </property>
+   <property name="rightMargin">
+    <number>3</number>
+   </property>
+   <property name="bottomMargin">
+    <number>3</number>
+   </property>
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButton_poll">
+       <property name="text">
+        <string>Poll</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_send">
+       <property name="text">
+        <string>Send</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditCommand"/>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QTreeWidget" name="treeWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>0</height>
+       </size>
+      </property>
+      <column>
+       <property name="text">
+        <string>Protocol</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>index</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>subWidget</string>
+       </property>
+      </column>
+      <item>
+       <property name="text">
+        <string>ASIC (GNSS Device) Manager Messages (0x02)</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="text">
+        <string>page_0</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>BRM-ASC-SLEEP (0x02 0x41)</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="text">
+         <string>page_0</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>GNSS Assistance Messages (0x13)</string>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="text">
+        <string>page_4</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>BRM-AST-REF_LOCATION (0x13 0x40)</string>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+        <property name="text">
+         <string>page_4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BRM-AST-REF_TIME_UTC (0x13 0x40)</string>
+        </property>
+        <property name="text">
+         <string>5</string>
+        </property>
+        <property name="text">
+         <string>page_5</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>PVT Results Messages (0x01)</string>
+       </property>
+       <property name="text">
+        <string>7</string>
+       </property>
+       <property name="text">
+        <string>page_7</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>BRM-PVT-RESET_ACC_DIST (0x01 0x10)</string>
+        </property>
+        <property name="text">
+         <string>7</string>
+        </property>
+        <property name="text">
+         <string>page_7</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>Setup Messages (0x06)</string>
+       </property>
+       <property name="text">
+        <string>12</string>
+       </property>
+       <property name="text">
+        <string>page_12</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>BRM-STP-CONFIG (0x06 0x09)</string>
+        </property>
+        <property name="text">
+         <string>12</string>
+        </property>
+        <property name="text">
+         <string>page_12</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BRM-STP-CONFIG2 (0x06 0x24)</string>
+        </property>
+        <property name="text">
+         <string>13</string>
+        </property>
+        <property name="text">
+         <string>page_13</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BRM-STP-MESSAGE (0x06 0x01)</string>
+        </property>
+        <property name="text">
+         <string>16</string>
+        </property>
+        <property name="text">
+         <string>page_16</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Set Message Rate</string>
+         </property>
+         <property name="text">
+          <string>16</string>
+         </property>
+         <property name="text">
+          <string>page_16</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>BRM-STP-ME_SETTINGS (0x06 0x3E)</string>
+        </property>
+        <property name="text">
+         <string>18</string>
+        </property>
+        <property name="text">
+         <string>page_18</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BRM-STP-NMEA (0x06 0x17)</string>
+        </property>
+        <property name="text">
+         <string>19</string>
+        </property>
+        <property name="text">
+         <string>page_19</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BRM-STP-PORT (0x06 0x00)</string>
+        </property>
+        <property name="text">
+         <string>21</string>
+        </property>
+        <property name="text">
+         <string>page_21</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Port Setup</string>
+         </property>
+         <property name="text">
+          <string>21</string>
+         </property>
+         <property name="text">
+          <string>page_21</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>BRM-STP-PWR_MODE (0x06 0x86)</string>
+        </property>
+        <property name="text">
+         <string>22</string>
+        </property>
+        <property name="text">
+         <string>page_22</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BRM-STP-RESET (0x06 0x04)</string>
+        </property>
+        <property name="text">
+         <string>23</string>
+        </property>
+        <property name="text">
+         <string>page_23</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BRM-STP-RF_L1L5bias (0x06 0xB0)</string>
+        </property>
+        <property name="text">
+         <string>24</string>
+        </property>
+        <property name="text">
+         <string>page_24</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>BRM-STP-PPS(0x06 0x31)</string>
+        </property>
+        <property name="text">
+         <string>25</string>
+        </property>
+        <property name="text">
+         <string>page_25</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>NMEA</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <item>
+        <property name="text">
+         <string>PQTMVERNO</string>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+        <property name="text">
+         <string>page_2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PQTMCFGEINSMSG</string>
+        </property>
+        <property name="text">
+         <string>52</string>
+        </property>
+        <property name="text">
+         <string>page_52</string>
+        </property>
+       </item>
+      </item>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>25</number>
+      </property>
+      <widget class="QWidget" name="page_0">
+       <layout class="QGridLayout" name="gridLayout_21">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Duration(Maximum 12 days)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit_duration">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>ms</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>Wakeup sources</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_20">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_wakeup_uartrx">
+             <property name="text">
+              <string>UART RX</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBox_wakeup_extint0">
+             <property name="text">
+              <string>EXTINT0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QCheckBox" name="checkBox_wakeup_spics">
+             <property name="text">
+              <string>SPICS</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButton_GC0">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_1">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>18</number>
+        </property>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_33">
+          <property name="text">
+           <string>$PQVERNO</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="Line" name="line_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_17">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_GC2">
+          <property name="text">
+           <string>Send NMEA Command</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3"/>
+      <widget class="QWidget" name="page_4">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <property name="verticalSpacing">
+           <number>18</number>
+          </property>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>Position accuracy (cm)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>WGS84 Longitude(degrees)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_lon">
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_alt">
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>WGS84 Latitude(degrees)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>WGS84 Altitude(cm)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_lat">
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="lineEdit_posAcc">
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>155</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_GC4">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_5">
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>ACC ns</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QLineEdit" name="lineEdit_tAccNs">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>ns</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="lineEdit_minute">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Minute, from 0 to 59</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_17">
+          <property name="text">
+           <string>Nanoseconds</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_16">
+          <property name="text">
+           <string>Second</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>Hour</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit_month">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Month, starting at 1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="lineEdit_hour">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Hour, from 0 to 23</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>Day</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>Minute</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLineEdit" name="lineEdit_tAccS">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Seconds</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="lineEdit_second">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Second, from 0 to 59</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit_leapSecs">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>If you don't know the input -128</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_year">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>LeapSecs</string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButton_GC5">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>Month</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lineEdit_day">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Day, starting at 1</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1">
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_18">
+          <property name="text">
+           <string>ACC</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLineEdit" name="lineEdit_ns">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>ns</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>Year</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QPushButton" name="pushButton_CurrentTime">
+          <property name="text">
+           <string>Current time</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_6"/>
+      <widget class="QWidget" name="page_7">
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_20">
+          <property name="text">
+           <string>Reset accumulated distance</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_GC7">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_8"/>
+      <widget class="QWidget" name="page_9"/>
+      <widget class="QWidget" name="page_10"/>
+      <widget class="QWidget" name="page_11"/>
+      <widget class="QWidget" name="page_12">
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QGroupBox" name="groupBox_ClearMask">
+          <property name="title">
+           <string>ClearMask</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_CM_ioPort">
+             <property name="text">
+              <string>IO Port</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBox_CM_msgConf">
+             <property name="text">
+              <string>MSG</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QCheckBox" name="checkBox_CM_infMsg">
+             <property name="text">
+              <string>WNG MSG</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_CM_PVTConf">
+             <property name="text">
+              <string>PVT</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="checkBox_CM_ASConf">
+             <property name="text">
+              <string>ASC</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QCheckBox" name="checkBox_CM_ftsConf">
+             <property name="text">
+              <string>FST</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_SaveMask">
+          <property name="title">
+           <string>SaveMask</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_SM_ioPort">
+             <property name="text">
+              <string>IO Port</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBox_SM_msgConf">
+             <property name="text">
+              <string>MSG</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QCheckBox" name="checkBox_SM_infMsg">
+             <property name="text">
+              <string>WNG MSG</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_SM_PVTConf">
+             <property name="text">
+              <string>PVT</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="checkBox_SM_ASConf">
+             <property name="text">
+              <string>ASC</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QCheckBox" name="checkBox_SM_ftsConf">
+             <property name="text">
+              <string>FST</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_LoadMask">
+          <property name="title">
+           <string>LoadMask</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_LM_ioPort">
+             <property name="text">
+              <string>IO Port</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBox_LM_msgConf">
+             <property name="text">
+              <string>MSG</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QCheckBox" name="checkBox_LM_infMsg">
+             <property name="text">
+              <string>WNG MSG</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_LM_PVTConf">
+             <property name="text">
+              <string>PVT</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="checkBox_LM_ASConf">
+             <property name="text">
+              <string>ASC</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QCheckBox" name="checkBox_LM_ftsConf">
+             <property name="text">
+              <string>FST</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>69</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_GC12">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_13">
+       <layout class="QGridLayout" name="gridLayout_9">
+        <property name="verticalSpacing">
+         <number>18</number>
+        </property>
+        <item row="0" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Parameters bit mask</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_13">
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="checkBox_blindGalSearch">
+             <property name="text">
+              <string>Apply blindGalSearch settings</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_dyn">
+             <property name="text">
+              <string>Apply dynamic model settings</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_posMask">
+             <property name="text">
+              <string>Apply position accuracy mask setting</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_21">
+          <property name="text">
+           <string>Context</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButton_GC13">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QCheckBox" name="checkBox_EnableBlindGalSearch">
+          <property name="text">
+           <string>Enable blind Galileo search</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="comboBox_Context">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <item>
+           <property name="text">
+            <string>0: Portable</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2: Stationary</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3: Pedestrian</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4: Driving</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5: Swimming</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10: Biking</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit_pAcc">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_22">
+          <property name="text">
+           <string>Position accuracy mask(m)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <spacer name="verticalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_14">
+       <layout class="QGridLayout" name="gridLayout_10">
+        <property name="verticalSpacing">
+         <number>24</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_23">
+          <property name="text">
+           <string>MSGGroup</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit_msgGroup"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_24">
+          <property name="text">
+           <string>MSGNumber</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_msgNumber"/>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>191</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButton_GC14">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_15">
+       <layout class="QGridLayout" name="gridLayout_11">
+        <property name="verticalSpacing">
+         <number>18</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_26">
+          <property name="text">
+           <string>MSGGroup</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="3">
+         <widget class="QLineEdit" name="lineEdit_msgGroup_rate">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_25">
+          <property name="text">
+           <string>MSGNumber</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="3">
+         <widget class="QLineEdit" name="lineEdit_msgNumber_rate">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_27">
+          <property name="text">
+           <string>Rate</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="lineEdit_rate_uart">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>UART</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLineEdit" name="lineEdit_3">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lineEdit_4">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lineEdit_6">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLineEdit" name="lineEdit_5">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <spacer name="verticalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>133</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="5" column="0" colspan="4">
+         <widget class="QPushButton" name="pushButton_GC15">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_16">
+       <layout class="QGridLayout" name="gridLayout_12">
+        <property name="verticalSpacing">
+         <number>18</number>
+        </property>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_29">
+          <property name="text">
+           <string>Rate</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_rate_c">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Send rate on current I/O port</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButton_GC16">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBox_groupAndNumber">
+          <item>
+           <property name="text">
+            <string>0x01 0x04  BRM-PVT-DOP</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x01 0x07  BRM-PVT-PVT  </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x01 0x09  BRM-PVT-ACC_DIST</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x01 0x35  BRM-PVT-SAT</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x01 0x60  BRM-PVT-CBEE_STATUS</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x01 0x61  BRM-PVT-EOE</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x02 0x13  BRM-ASC-SUBFRAME</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x02 0x15  BRM-STP-RAW_MEAS_DATA</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0xF0 0x00  NMEA GGA</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0xF0 0x01  NMEA GLL</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0xF0 0x02  NMEA GSA</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0xF0 0x03  NMEA GSV</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0xF0 0x04  NMEA RMC</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0xF0 0x05  NMEA VTG</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0xF0 0x0D  NMEA GNS</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0xF1 0x00  NMEA PGLOR Speed</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0xF1 0x01  NMEA PGLOR Fix</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0xF1 0x02  NMEA PGSAT</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0xF1 0x03  NMEA PGLOR LSQ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0xF1 0x04  NMEA PGLOR PWR</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0xF1 0x05  NMEA PGLOR STA</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <spacer name="verticalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>171</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_32">
+          <property name="text">
+           <string>Group and Number</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_17"/>
+      <widget class="QWidget" name="page_18">
+       <layout class="QGridLayout" name="gridLayout_23">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_3" columnstretch="1,0">
+          <property name="verticalSpacing">
+           <number>12</number>
+          </property>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_numTrkChUse">
+            <property name="text">
+             <string>32</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_31">
+            <property name="text">
+             <string>numTrkChUse</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_22" columnstretch="1,0">
+          <property name="verticalSpacing">
+           <number>12</number>
+          </property>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_numTrkChHw">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_45">
+            <property name="text">
+             <string>numTrkChHw</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <layout class="QGridLayout" name="gridLayout_GNSS_Configure">
+          <property name="horizontalSpacing">
+           <number>6</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>12</number>
+          </property>
+          <item row="2" column="3">
+           <widget class="QCheckBox" name="checkBox_Gal_E5">
+            <property name="text">
+             <string>E5</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QCheckBox" name="checkBox_GC_QZSS">
+            <property name="text">
+             <string>5:QZSS</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QCheckBox" name="checkBox_BD_B2aL5">
+            <property name="text">
+             <string>B2a L5</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QCheckBox" name="checkBox_GC_BD">
+            <property name="text">
+             <string>3:BeiDou</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QCheckBox" name="checkBox_Enable_Gal">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QCheckBox" name="checkBox_Enable_Glo">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="checkBox_GC_Gal">
+            <property name="text">
+             <string>2:Galileo</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QCheckBox" name="checkBox_Enable_QZSS">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QCheckBox" name="checkBox_Enable_BD">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <widget class="QCheckBox" name="checkBox_QZSS_L5">
+            <property name="text">
+             <string>L5</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QCheckBox" name="checkBox_Gal_E1">
+            <property name="text">
+             <string>E1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QCheckBox" name="checkBox_Glo_L1">
+            <property name="text">
+             <string>L1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_43">
+            <property name="text">
+             <string>Enable</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QCheckBox" name="checkBox_Enable_NAVIC">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QCheckBox" name="checkBox_NAVIC_L5">
+            <property name="text">
+             <string>L5</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>GNSS Configure</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QCheckBox" name="checkBox_BD_B1">
+            <property name="text">
+             <string>B1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QCheckBox" name="checkBox_QZSS_L1">
+            <property name="text">
+             <string>L1C/A</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QCheckBox" name="checkBox_GC_Glo">
+            <property name="text">
+             <string>6:GLONASS</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QCheckBox" name="checkBox_GC_NAVIC">
+            <property name="text">
+             <string>7:NAVIC</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="checkBox_GC_GPS">
+            <property name="text">
+             <string>0:GPS</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QCheckBox" name="checkBox_Enable_GPS">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QCheckBox" name="checkBox_GPS_L1">
+            <property name="text">
+             <string>L1C/A</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QCheckBox" name="checkBox_GPS_L5">
+            <property name="text">
+             <string>L5</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_44">
+            <property name="text">
+             <string>Signals</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="0">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="pushButton_GC18">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_19">
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="horizontalSpacing">
+           <number>6</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>30</number>
+          </property>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="comboBox_numSV">
+            <item>
+             <property name="text">
+              <string>0:Unlimited</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>8</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>12</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>16</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_30">
+            <property name="text">
+             <string>NMEA version</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>MAX SVs in GSV message</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="comboBox_NMEA_Version">
+            <item>
+             <property name="text">
+              <string>NMEA V2.1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>NMEA V4.11 </string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>217</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_GC19">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_20"/>
+      <widget class="QWidget" name="page_21">
+       <layout class="QGridLayout" name="gridLayout_15">
+        <property name="verticalSpacing">
+         <number>24</number>
+        </property>
+        <item row="3" column="1" colspan="2">
+         <widget class="QComboBox" name="comboBox_extendedTxTimeout">
+          <item>
+           <property name="text">
+            <string>0</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="6" column="1" colspan="2">
+         <spacer name="verticalSpacer_13">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>279</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_36">
+          <property name="text">
+           <string>Baud Rate</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_mode">
+          <property name="text">
+           <string>Protocol out</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="2">
+         <widget class="QComboBox" name="comboBox_baudRate">
+          <property name="sizeAdjustPolicy">
+           <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+          </property>
+          <item>
+           <property name="text">
+            <string>115200</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>230400</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>460800</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>921600</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_34">
+          <property name="text">
+           <string>Port </string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1" colspan="2">
+         <widget class="QComboBox" name="comboBox_protocolOut">
+          <property name="currentIndex">
+           <number>3</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>none</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0 - Bream</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1 - NMEA</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0+1 - NMEA+Bream</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="7" column="0" colspan="3">
+         <widget class="QPushButton" name="pushButton_GC21">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="2">
+         <widget class="QComboBox" name="comboBox_portID">
+          <item>
+           <property name="text">
+            <string>1:UART</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_37">
+          <property name="text">
+           <string>Extended TX timeout</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_22">
+       <layout class="QGridLayout" name="gridLayout_16">
+        <property name="verticalSpacing">
+         <number>24</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_35">
+          <property name="text">
+           <string>PowerSetupValue</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_38">
+          <property name="text">
+           <string>Period(second)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="lineEdit_period">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_40">
+          <property name="text">
+           <string>OnTime(second)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="lineEdit_onTime">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_39">
+          <property name="text">
+           <string>TryToDecodeEph</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLineEdit" name="lineEdit_tryToDecodeEph">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>default is 15 minutes</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <spacer name="verticalSpacer_14">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>279</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="5" column="0" colspan="3">
+         <widget class="QPushButton" name="pushButton_GC22">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QComboBox" name="comboBox_powerSetupValue">
+          <property name="layoutDirection">
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <item>
+           <property name="text">
+            <string>0x00: Best Performance</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x01: Automatic</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x02: Interval</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0x03: Ultralow power (ULP) mode</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_23">
+       <layout class="QGridLayout" name="gridLayout_18">
+        <property name="verticalSpacing">
+         <number>24</number>
+        </property>
+        <item row="4" column="0">
+         <spacer name="verticalSpacer_15">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>349</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0" colspan="3">
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>Data sections to clear</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_17">
+           <property name="verticalSpacing">
+            <number>24</number>
+           </property>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="checkBox_cbee">
+             <property name="text">
+              <string>CBEE</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_Ephemeris">
+             <property name="text">
+              <string>Ephemeris</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_Clockdrift">
+             <property name="text">
+              <string>Clock drift</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QCheckBox" name="checkBox_UTC">
+             <property name="text">
+              <string>UTC</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QCheckBox" name="checkBox_Almanac">
+             <property name="text">
+              <string>Almanac</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QCheckBox" name="checkBox_RTC">
+             <property name="text">
+              <string>RTC</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QCheckBox" name="checkBox_Position">
+             <property name="text">
+              <string>Position</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_41">
+          <property name="text">
+           <string>Reset mode</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" colspan="3">
+         <widget class="QPushButton" name="pushButton_GC23">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="2">
+         <widget class="QComboBox" name="comboBox_resetMode">
+          <property name="layoutDirection">
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <item>
+           <property name="text">
+            <string>01: Controlled software reset</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>02: Controlled software reset</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>08: Controlled GNSS stop</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>09: Controlled GNSS start</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Startup option</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QComboBox" name="comboBox_reset_option">
+          <property name="layoutDirection">
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <item>
+           <property name="text">
+            <string>User Defined</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Hotstart</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Warmstart</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Coldstart</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_24">
+       <layout class="QGridLayout" name="gridLayout_19">
+        <item row="3" column="0">
+         <spacer name="verticalSpacer_16">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>447</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_42">
+          <property name="text">
+           <string>L1 L5 Bias(Meter)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButton_GC24">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit_L1L5bias">
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="Line" name="line_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="label_28">
+          <property name="text">
+           <string>BRM-STP-RF_L1L5bias</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_52">
+       <widget class="QLabel" name="label_46">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>378</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PQTMCFGEINSMSG</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>31</y>
+          <width>378</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_PQTMCFGEINSMSG">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>378</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Send NMEA Command</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>241</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_24">
+         <item row="0" column="1">
+          <widget class="QComboBox" name="comboBox_ins_onOff">
+           <item>
+            <property name="text">
+             <string>Disable</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Enable</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_48">
+           <property name="text">
+            <string>IMU_OnOff</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_47">
+           <property name="text">
+            <string>INS_OnOff</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_49">
+           <property name="text">
+            <string>Rate</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="comboBox_imu_onOff">
+           <item>
+            <property name="text">
+             <string>Disable</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Enable</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QComboBox" name="comboBox_gps_onOff">
+           <item>
+            <property name="text">
+             <string>Disable</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Enable</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_50">
+           <property name="text">
+            <string>GPS_OnOff</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QComboBox" name="comboBox_imu_ins_rate">
+           <item>
+            <property name="text">
+             <string>10 Hz</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>20 Hz</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>50 Hz</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_25">
+       <layout class="QGridLayout" name="gridLayout_14">
+        <item row="6" column="0" colspan="2">
+         <widget class="QPushButton" name="pushButton_GC25">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Generating code</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>BRM-STP-PPS</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QCheckBox" name="checkBox_EnableTimePulse">
+          <property name="text">
+           <string>Enable PPS signal</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="minimumSize">
+           <size>
+            <width>366</width>
+            <height>74</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>isLength</string>
+          </property>
+          <widget class="QRadioButton" name="radioButton_isLength">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>22</y>
+             <width>59</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Length</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="radioButton_8">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>22</y>
+             <width>83</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Duty Cycle</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_pulseLenRatio">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>44</y>
+             <width>133</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_pulseLenRatio">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>44</y>
+             <width>141</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Pulse length(us)</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="minimumSize">
+           <size>
+            <width>366</width>
+            <height>74</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>isFreq</string>
+          </property>
+          <widget class="QRadioButton" name="radioButton_isFreq">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>22</y>
+             <width>77</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Frequency</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="radioButton_6">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>22</y>
+             <width>59</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Period</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_freqPeriod">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>44</y>
+             <width>133</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_freqPeriod">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>44</y>
+             <width>131</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Pulse Frequency(Hz)</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QCheckBox" name="checkBox_RisingDege">
+          <property name="text">
+           <string>Rising edge</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <spacer name="verticalSpacer_12">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

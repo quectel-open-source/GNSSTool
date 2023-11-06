@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Build a Smarter World.png</file>
+        <file>images/Logo.png</file>
+        <file>images/movie2.gif</file>
+        <file>images/movie3.gif</file>
+        <file>images/movie4.gif</file>
+        <file>images/Q.png</file>
+        <file>images/Quectel.ico</file>
+        <file>images/save.svg</file>
+        <file>images/about_quectel.png</file>
+        <file>images/Qlog.ico</file>
+        <file>images/Qlog (2).ico</file>
+        <file>images/Qlog (3).ico</file>
+        <file>images/Qlog1.ico</file>
+        <file>images/openfile.svg</file>
+        <file>images/saveAs.svg</file>
+        <file>images/bmp.svg</file>
+        <file>images/jpg.svg</file>
+        <file>images/pdf.svg</file>
+        <file>images/png.svg</file>
+        <file>images/lineChart.svg</file>
+        <file>images/scatterChart.svg</file>
+        <file>images/about.svg</file>
+        <file>images/help.svg</file>
+        <file>images/MenuBar.png</file>
+        <file>images/Plots.png</file>
+        <file>images/Signals.jpg</file>
+        <file>images/ZOOM.jpg</file>
+        <file>images/Screen.svg</file>
+        <file>qt/etc/qt.conf</file>
+        <file>images/Plotting Area.jpg</file>
+    </qresource>
+</RCC>
