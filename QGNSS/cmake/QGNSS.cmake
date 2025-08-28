@@ -1,0 +1,30 @@
+﻿set(QGNSS_INSTALL_DIR   ${CMAKE_SOURCE_DIR}/out/install)
+
+set(SUBMODULE_DIR       ${CMAKE_SOURCE_DIR}/submodule)
+set(BREAKPAD_DIR        ${SUBMODULE_DIR}/breakpad)
+set(CRASHREPORT_DIR     ${SUBMODULE_DIR}/crashreport)
+#set(QSSCOM_DIR          ${SUBMODULE_DIR}/qsscom)
+set(QEXCELL_DIR         ${SUBMODULE_DIR}/qexcell)
+set(QLICENSE_DIR         ${SUBMODULE_DIR}/QGNSS_LIB/crypto)
+set(RTCM_ANALYSIS_DIR   ${SUBMODULE_DIR}/rtcm_analysis)
+set(QRTCM_ANALYSIS_DIR  ${SUBMODULE_DIR}/q_rtcm_analysis)
+set(NTRIP_SERVER_DIR  ${SUBMODULE_DIR}/ql_ntrip_server)
+
+set(QGNSS_LIB_DIR       ${SUBMODULE_DIR}/QGNSS_LIB)
+set(DB_CENTER_DIR       ${QGNSS_LIB_DIR}/db_center)
+set(IO_DIR              ${QGNSS_LIB_DIR}/io)
+set(UART_DIR            ${IO_DIR}/libserialport)
+set(QGMI_DIR            ${QGNSS_LIB_DIR}/qgmi)
+set(AISG_DIR            ${QGNSS_LIB_DIR}/aisg)
+set(SQLITE3_DIR         ${QGNSS_LIB_DIR}/sqlite3)
+set(RTKLIB_DIR          ${QGNSS_LIB_DIR}/rtklib)
+
+# 更改后需删除cmake缓存并重新配置！！
+option(DEV_Mode "开发模式(带有黑窗和调试信息)ON 发布设置为OFF(去除黑窗和调试信息)" OFF)
+
+if(DEV_Mode)
+add_definitions(-D DEV_MODE)
+set(WIN)
+else()
+set(WIN WIN32)
+endif()
